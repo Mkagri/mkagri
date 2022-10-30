@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>MKAgri || Products</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('nYamgcPECd3BTW_UR');
+        })();
+    </script>
+</head>
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <div class="scrollup" id="back-to-top"><img src="images/scrollup.png" style="transform: rotate(270deg);" alt="">
+    </div>
+
+    <header>
+        <div class="header-top">
+            <div class="header">
+                <nav class="nav">
+                    <div class="nav_container">
+                        <div class="logo">
+                            <a href="index.html"><img class="logo_img" src="images/logo.png" alt="MKAgri"></a>
+                        </div>
+                        <ul class="nav-list">
+                            <li><a href="index.html" class="nav-home">Home</a></li>
+                            <li><a href="about.html" class="nav-abt">About</a></li>
+                            <li><a href="#vegetable" class="nav-prdt current">Products</a></li>
+                            <li><a href="#contact" class="nav-contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="pic-nav">
+            <div class="img-one pic">
+                <button onclick="myfunc(this.value)" value="wheat" class="pic-nav-img">Wheat</button>
+            </div>
+            <div class="pic img-two">
+                <button onclick="myfunc(this.value)" value="soyabean" class="pic-nav-img">Soyabeans</button>
+            </div>
+            <div class="pic img-four">
+                <button onclick="myfunc(this.value)" value="sesame" class="pic-nav-img">Sesame</button>
+            </div>
+            <div class="pic img-five">
+                <button onclick="myfunc(this.value)" value="millets" class="pic-nav-img">Millets</button>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <div id="vegetable" class="vegetable">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage">
+                    <h2>All<strong class="llow"> Products</strong> </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="vegetable_shop">
+                    <div class="product-container">
+                        <div class="product-card">
+                            <div class="product-img img-one"></div>
+                            <div class="product-text">
+                                <h3>Wheat</h3>
+                                <p>Wheat is the most important winter cereal grown during the non-monsoon months.</p>
+                            </div>
+                            <div class="product-cart">
+                                <button onclick="myfunc(this.value)" value="wheat">Details</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img img-two"></div>
+                            <div class="product-text">
+                                <h3>Soyabeans</h3>
+                                <p>The soyabean is one of the richest sources of protein and is a staple in the diets of
+                                    people.</p>
+                            </div>
+                            <div class="product-cart">
+                                <button onclick="myfunc(this.value)" value="soyabean">Details</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-img img-four"></div>
+                            <div class="product-text">
+                                <h3>Sesame</h3>
+                                <p>Sesame seeds are beneficial for healthy cooking to make margarine and salad
+                                    oils.</p>
+                            </div>
+                            <div class="product-cart">
+                                <button onclick="myfunc(this.value)" value="sesame">Details</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-img img-five"></div>
+                            <div class="product-text">
+                                <h3>Pearl Millets</h3>
+                                <p>Pearl millet is a summer annual crop well-suited for double cropping and rotations.
+                                </p>
+                            </div>
+                            <div class="product-cart">
+                                <button onclick="myfunc(this.value)" value="millets">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detailed-prdt" id="detailed-prdt">
+        <div class="wheat" id="wheat">
+            <div class="row">
+                <div class="col-md-4 images_box">
+                    <div class="prdt-img img-one"></div>
+                </div>
+                <div class="col-md-8">
+                    <div class="text-bg">
+                        <h2>Wheat</h2>
+                        <p>
+                            Wheat is the most important winter cereal grown during the non-monsoon months, and it is
+                            less vulnerable to yield
+                            fluctuation than other crops. After rice, wheat is the most important cereal in India. It is
+                            grown in cooler regions of
+                            India during the mild winter months of November to mid-April.
+                        </p>
+                        <p>Physical characteristics such as hectolitre weight, thousand grain weight, grain hardness and
+                            texture are important for
+                            the grain trade. Based on physical parameters and purity, Indian wheat has been grouped into
+                            different grades in
+                            accordance with the international grading system. Our grading system is therefore comparable
+                            with the practices followed
+                            in other parts of the world.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-bg">
+                        <h2>Wheat Specification</h2>
+                        <table>
+                            <tr>
+                                <td>Country of Origin</td>
+                                <td>India</td>
+                            </tr>
+                            <tr>
+                                <td>Moisture</td>
+                                <td>10%-12% max</td>
+                            </tr>
+                            <tr>
+                                <td>Damaged Kernels</td>
+                                <td>3% max</td>
+                            </tr>
+                            <tr>
+                                <td>Foreign Material</td>
+                                <td>2% max</td>
+                            </tr>
+                            <tr>
+                                <td>Other Food Grains</td>
+                                <td>2%max</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-bg info">
+                        <h2>Packaging Information</h2>
+                        <ul>
+                            <li>Bag Weight 60 Gms</li>
+                            <li>Weight Capacity to Pack Up to 25 Kgs</li>
+                            <li>Colour Natural, White</li>
+                            <li>Labelling Printing with water based ink</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-bg">
+                        <h2>Wheat Uses</h2>
+                        <ul>
+                            <li>Physical characteristics such as hectolitre weight, thousand grain weight, grain
+                                hardness and texture are important for
+                                the grain trade. </li>
+                            <li>Based on physical parameters and purity, Indian wheat has been grouped into different
+                                grades in
+                                accordance with the international grading system.</li>
+                            <li>Our grading system is therefore comparable with the practices followed
+                                in other parts of the world.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="soyabean" id="soyabean">
+            <div class="row">
+                <div class="col-md-4 images_box">
+                    <div class="prdt-img img-two"></div>
+                </div>
+                <div class="col-md-8">
+                    <div class="text-bg">
+                        <h2>Soyabeans</h2>
+                        <p>The soyabean is one of the richest and cheapest sources of protein and is a staple in the
+                            diets of people and animals in
+                            numerous parts of the world. The seed contains 17 percent oil and 63 percent meal, 50
+                            percent of which is protein.
+                            Because soybeans contain no starch, they are a good source of protein for diabetics.</p>
+                        <p>Soybeans are also sprouted for use as a salad ingredient or as a vegetable and may be eaten
+                            roasted as a snack food.
+                            Young soybeans, known as edamame, are commonly steamed or boiled and eaten directly from the
+                            pod.</p>
+                        <p>Modern research has led to a remarkable variety of uses for the soybean. Its oil can be
+                            processed into margarine,
+                            shortening, and vegetarian and vegan cheeses. Soybean meal serves as a high-protein meat
+                            substitute in many food
+                            products, including baby foods and vegetarian foods, and can be imparted with a meat like
+                            texture for increasing the
+                            cooked yield of ground meats. Industrially, the oil is used as an ingredient in paints,
+                            adhesives, fertilizers, sizing
+                            for cloth, linoleum backing, and fire-extinguisher fluids, among other products.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-bg">
+                        <h2>Soyabean Specification</h2>
+                        <table>
+                            <tr>
+                                <td>Country of Origin</td>
+                                <td>India</td>
+                            </tr>
+                            <tr>
+                                <td>Moisture</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>Other Food Grains</td>
+                                <td>2% max</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-bg info">
+                        <h2>packaging Information</h2>
+                        <ul>
+                            <li>Bag Weight 60 Gms</li>
+                            <li>Weight Capacity to Pack Up to 25 Kgs</li>
+                            <li>Colour Natural, White</li>
+                            <li>Labelling Printing with water based ink</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sesame" id="sesame">
+            <div class="row">
+                <div class="col-md-4 images_box">
+                    <div class="prdt-img img-four"></div>
+                </div>
+                <div class="col-md-8">
+                    <div class="text-bg">
+                        <h2>Sesame</h2>
+                        <p>Sesame seed has been used as a condiment and a source of edible oil for over 5000 years.
+                        </p>
+                        <p>Its use is as common as topping
+                            a sesame seed hamburger bun, sprinkled on a wide variety of Asian dishes, and studding
+                            crackers and sweets in South
+                            Asian, Middle Eastern, Mediterranean, and Caribbean cuisine.</p>
+                        <p>Sesame seed is the seed of the sesame plant (Sesamum indicum). The plant is an annual
+                            herb with foxglove-like flowers
+                            that produce pods containing the edible sesame seeds.
+                        </p>
+                        <p>The pods burst open with a pop when the seeds are mature.</p>
+                        <p>The seeds can also be pressed for sesame oil. Besides use as a condiment, in Asia, the
+                            toasted seeds are used to make
+                            sesame paste, which is often used as a peanut butter substitute.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-bg">
+                        <h2>Sesame Benefits</h2>
+                        <ul>
+                            <li>Sesame seeds help to manage diabetes</li>
+                            <li>Sesame seeds help to reduce inflammation</li>
+                            <li>Sesame seeds help improve metabolism</li>
+                            <li>Sesame seeds has anti-ageing properties</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-bg">
+                        <h2>Sesame Specification</h2>
+                        <p>Sesame seeds originate from the plant Sesamum Indicum L. excellent for human consumption.
+                            Natural Sesame Seeds contain
+                            all the natural nutrients of sesame seeds. Sesame seeds have high oil content (approx. 48%
+                            min.) and protein content
+                            (approx. 25%).
+                        </p>
+                        <table>
+                            <tr>
+                                <td>Country of Origin</td>
+                                <td>India</td>
+                            </tr>
+                            <tr>
+                                <td>Moisture</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>Oil content </td>
+                                <td>Min 48%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-bg info">
+                        <h2>packaging Information</h2>
+                        <ul>
+                            <li>Bag Weight 60 Gms</li>
+                            <li>Weight Capacity to Pack Up to 25 Kgs</li>
+                            <li>Colour Natural, White</li>
+                            <li>Labelling Printing with water based ink</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-bg">
+                        <h2>Sesame Uses</h2>
+                        <ul>
+                            <li>Sesame seeds are beneficial for healthy cooking and can be processed to make margarine
+                                and salad oils.</li>
+                            <li>Natural sesame seed products have several health advantages that improve your general
+                                health and fitness.
+                                Additionally, they are abundant in vital nutrients and minerals like vitamin B1,
+                                calcium, iron, magnesium, and
+                                phosphorus.</li>
+                            <li>Sesame seeds are used to make a paste or spread that is typically good for crackers and
+                                toast.</li>
+                            <li>A It can be used with bakery products, primarily in breads.</li>
+                            <li>In India, sesame seeds are used as a condiment to enhance the flavour of your food.</li>
+                            <li>Sesame powder typically goes with handmade breads and gives recipes a nutty flavour.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="millets" id="millets">
+            <div class="row">
+                <div class="col-md-4 images_box">
+                    <div class="prdt-img img-five"></div>
+                </div>
+                <div class="col-md-8">
+                    <div class="text-bg">
+                        <h2>Pearl Millets</h2>
+                        <p>Pearl millet is the most widely grown type of millet. Pearl millet is a summer annual crop
+                            well-suited for double
+                            cropping and rotations. India is the largest producer of pearl millet, Rajasthan and Gujarat
+                            are the highest-producing
+                            state in India.</p>
+                        <p>Its flour can be used to make bread. Gluten-free, all-natural, and organic pearl millet
+                            grain. Additionally, it is
+                            abundant in insoluble fibre, which aids in digestion and is healthy for the body, as well as
+                            in minerals and vitamins.
+                            The amino acids in pearl millet are allegedly easier to digest than those in wheat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-bg">
+                        <h2>Pearl Millets Specification</h2>
+                        <table>
+                            <tr>
+                                <td>Country of Origin</td>
+                                <td>India</td>
+                            </tr>
+                            <tr>
+                                <td>Moisture</td>
+                                <td>10%-12% max</td>
+                            </tr>
+                            <tr>
+                                <td>Organoleptic</td>
+                                <td>Clean, bright appearance, natural smell & colour</td>
+                            </tr>
+                            <tr>
+                                <td>Live insects</td>
+                                <td>Nill</td>
+                            </tr>
+                            <tr>
+                                <td>Dead insects, including parts, stages and waste</td>
+                                <td>Nill</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-bg info">
+                        <h2>Packaging Information</h2>
+                        <ul>
+                            <li>Bag Weight 60 Gms</li>
+                            <li>Weight Capacity to Pack Up to 25 Kgs</li>
+                            <li>Colour Natural, White</li>
+                            <li>Labelling Printing with water based ink</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="titlepage-1">
+            <h2> <strong class="llow"><a id="backToVeg" href="#vegetable">&lt; go back </a></strong> </h2>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2> <strong class="llow"></strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="white_color">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" style="border-right: 1px solid #000;">
+                        <form class="contact_bg" id="contactus" onsubmit="sendMail(); reset(); return false;"
+                            method="post">
+                            <div class="row ">
+                                <div class="col-md-12">
+                                    <div class="col-md-12">
+                                        <div class="pr-box">
+                                            <h2>Contact us</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-md-12">
+                                        <input class="contactus" id="name" placeholder="Your Name" type="text"
+                                            name="name" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input class="contactus" id="email" placeholder="Email" type="email"
+                                            name="email" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input class="contactus" id="phone" placeholder="Phone Number" type="tel"
+                                            name="number" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea class="textarea" id="msg" placeholder="Message" type="text" name="msg"
+                                            required style="resize:none"></textarea>
+                                    </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                        <button type="submit" class="send">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="contact_bg">
+                            <div class="row ">
+                                <div class="col-md-12">
+                                    <div class="pr-box">
+                                        <h2>About us</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="about-box">
+                                        <p><b class="llow">Manshukhlal Kamalshi & Co.</b> was founded in 1985 with the
+                                            focus on offering premium
+                                            agricultural products
+                                            like wheat, soy
+                                            beans, sesame, pearl millet, and pulses at highly competitive prices.
+                                            <br><br>
+                                            It was founded by <b class="llow">Late Shri
+                                                Manshukhlal Kamalshi
+                                                Vithalani</b> and is now continuously progressing with persistent
+                                            efforts, extensive industry expertise,
+                                            and
+                                            35+ years of
+                                            wholesome experience of <b class="llow">Shri Jayesh Vithalani, Shri Manish
+                                                Vithalani and Shri Jeetendra
+                                                Vithalani</b>.<br><br>
+                                            The Company at present operates through its processing plants in Gujarat's
+                                            Kodinar and Rajkot. <br>The
+                                            operations are
+                                            carried out by a wide-spread network of dedicated distributors and dealers
+                                            all across India.
+                                            <br><br>The high-end qualitative products are sold under the brand name <b
+                                                class="llow">“M K & Co”</b> and is
+                                            well
+                                            appreciated across
+                                            the customer
+                                            network for its superior quality and optimum price competence.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+    <!--  footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <a href="#" class="logo_footer"> <img class="logo_img" src="images/logo.png" alt="#" /></a>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="address">
+                            <h3>Navigation</h3>
+                            <ul class="Menu_footer">
+                                <li><a href="index.html">Home</a> </li>
+                                <li><a href="about.html">About</a> </li>
+                                <li><a href="products.html">Products</a> </li>
+                                <li><a href="#contact">Contact Us</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="address">
+                            <h3>Social Link</h3>
+                            <ul class="Menu_footer">
+                                <li><a href="#">Facebook</a> </li>
+                                <li><a href="#">Instagram</a> </li>
+                                <li><a href="#">LinkedIn</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="address">
+                            <h3>Address </h3>
+                            <ul class="loca Menu_footer">
+                                <li>
+                                    <a href="#">51, APMC, Kodinar, 362720</a>
+                                </li>
+                                <li>
+                                    <a href="#">(+91 8200792628)</a>
+                                </li>
+                                <li>
+                                    <a href="#">mansukhlal.kamashi.co@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>Copyright © 2022 Design by <a href="#">MKAGRI</a></p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

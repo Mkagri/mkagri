@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>MKAgri</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- fevicon -->
+  <link rel="icon" href="images/logo.png" type="image/gif" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+    media="screen">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('nYamgcPECd3BTW_UR');
+    })();
+  </script>
+</head>
+
+<!-- body -->
+
+<body class="main-layout">
+
+  <!-- loader  -->
+  <div class="loader_bg">
+    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+  </div>
+  <!-- end loader -->
+
+  <!-- Scrollup -->
+  <div class="scrollup" id="back-to-top"><img src="images/scrollup.png" style="transform: rotate(270deg);" alt="">
+  </div>
+
+  <!-- header -->
+  <header>
+    <!-- header inner -->
+    <div class="header-top">
+      <nav class="nav" id="myTopnav">
+        <div class="nav_container">
+          <div class="logo">
+            <a href="index.html"><img class="logo_img" src="images/logo.png" alt="MKAgri"></a>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-home current">Home</a></li>
+            <li><a href="about.html" class="nav-abt">About</a></li>
+            <li><a href="products.html" class="nav-prdt">Products</a></li>
+            <li><a href="#contact" class="nav-contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- end header inner -->
+    <div class="pic-nav-home">
+      <div class="about-box_img">
+        <figure><img src="images/banner.jpg" alt="#" /></figure>
+      </div>
+    </div>
+    <!-- end header -->
+  </header>
+
+
+  <!-- about  -->
+  <div id="about" class="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div class="about-box">
+            <h2>About us</h2>
+            <p><b class="llow">Manshukhlal Kamalshi & Co.</b> was founded in 1985 with the focus on offering premium
+              agricultural products
+              like wheat, soy
+              beans, sesame, pearl millet, and pulses at highly competitive prices. <br>
+              It was founded by <b class="llow">Late Shri
+                Manshukhlal Kamalshi
+                Vithalani</b> and is now continuously progressing with persistent efforts, extensive industry expertise,
+              and
+              35+ years of
+              wholesome experience of <b class="llow">Shri Jayesh Vithalani, Shri Manish Vithalani and Shri Jeetendra
+                Vithalani</b>.<br>
+              The Company at present operates through its processing plants in Gujarat's Kodinar and Rajkot. <br>The
+              operations are
+              carried out by a wide-spread network of dedicated distributors and dealers all across India.
+              <br>The high-end qualitative products are sold under the brand name <b class="llow">“M K & Co”</b> and is
+              well
+              appreciated across
+              the customer
+              network for its superior quality and optimum price competence.
+
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 padding_rl">
+          <div class="about-box_img">
+            <figure><img src="images/about1.jpg" alt="#" /></figure>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end abouts -->
+
+
+  <!-- vegetable -->
+  <div id="vegetable" class="vegetable">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="titlepage">
+          <h2>Our<strong class="llow"> Products</strong> </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="vegetable_shop">
+          <div class="product-container">
+            <div class="product-card">
+              <div class="product-img img-one"></div>
+              <div class="product-text">
+                <h3>Wheat</h3>
+                <p>Wheat is the most important winter cereal grown during the non-monsoon months.</p>
+              </div>
+              <div class="product-cart">
+                <button onclick="sendPrdt(this.value)" value="wheat">Details</button>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-img img-two"></div>
+              <div class="product-text">
+                <h3>Soyabeans</h3>
+                <p>The soyabean is one of the richest sources of protein and is a staple in the diets of
+                  people.</p>
+              </div>
+              <div class="product-cart">
+                <button onclick="sendPrdt(this.value)" value="soyabean">Details</button>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-img img-four"></div>
+              <div class="product-text">
+                <h3>Sesame</h3>
+                <p>Sesame seeds are beneficial for healthy cooking to make margarine and salad
+                  oils.</p>
+              </div>
+              <div class="product-cart">
+                <button onclick="sendPrdt(this.value)" value="sesame">Details</button>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-img img-five"></div>
+              <div class="product-text">
+                <h3>Pearl Millets</h3>
+                <p>Pearl millet is a summer annual crop well-suited for double cropping and rotations.</p>
+              </div>
+              <div class="product-cart">
+                <button onclick="sendPrdt(this.value)" value="millets">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end vegetable -->
+
+
+  <!-- clients -->
+  <div class="clients_red">
+    <div class="testomonial_section">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="titlepage">
+            <h2>Our<strong class="llow"> Firms</strong></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 pa_left">
+          <div class="testimonial_cont ">
+            <div class="cross_inner">
+              <h3><strong>Manshukhlal Kamalshi & Co</strong></h3>
+              <!-- <p>We Manshukhlal Kamalshi & Co. were founded in 1985 with the goal of offering premium
+                agricultural products like wheat,
+                soybeans, sesame, pearl millet, and pulses at highly competitive prices.
+              </p> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 pa_left">
+          <div class="testimonial_cont ">
+            <div class="cross_inner">
+              <h3><strong>M.K Traders</strong></h3>
+              <!-- <p>Research conducted by the company primarily focuses on creating high-quality agricultural
+                products that are sold under
+                the brand name "M.K & Co."
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- end clients -->
+
+  <!-- contact -->
+  <div id="contact" class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="titlepage">
+            <h2>Contact <strong class="llow">us</strong></h2>
+          </div>
+        </div>
+      </div>
+      <div class="white_color">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <form class="contact_bg" id="contactus" onsubmit="sendMail(); reset(); return false;" method="post">
+              <div class="row">
+                <div class="error"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="col-md-12">
+                    <input class="contactus" id="name" placeholder="Your Name" type="text" name="name" required>
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" id="email" placeholder="Email" type="email" name="email" required>
+                  </div>
+                  <div class="col-md-12">
+                    <input class="contactus" id="phone" placeholder="Phone Number" type="tel" name="number" required>
+                  </div>
+                  <div class="col-md-12">
+                    <textarea class="textarea" id="msg" placeholder="Message" type="text" name="msg" required
+                      style="resize:none"></textarea>
+                  </div>
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <button type="submit" class="send">Send</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div class="contact-box_img">
+              <img src="images/contact.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end contact -->
+
+  <!--  footer -->
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3">
+            <a href="#" class="logo_footer"> <img class="logo_img" src="images/logo.png" alt="#" /></a>
+          </div>
+          <div class="col-xl-3">
+            <div class="address">
+              <h3>Navigation</h3>
+              <ul class="Menu_footer">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="products.html">Products</a> </li>
+                <li><a href="#contact">Contact Us</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="address">
+              <h3>Social Link</h3>
+              <ul class="Menu_footer">
+                <li><a href="#">Facebook</a> </li>
+                <li><a href="#">Instagram</a> </li>
+                <li><a href="#">LinkedIn</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="address">
+              <h3>Address </h3>
+              <ul class="loca Menu_footer">
+                <li>
+                  <a href="#">51, APMC, Kodinar, 362720</a>
+                </li>
+                <li>
+                  <a href="#">(+91 8200792628)</a>
+                </li>
+                <li>
+                  <a href="#">mansukhlal.kamashi.co@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <p>Copyright © 2022 Design by <a href="#">MKAGRI</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+  <!-- Javascript files-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <!-- <script src="js/plugin.js"></script> -->
+  <!-- sidebar -->
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+</body>
+
+</html>
