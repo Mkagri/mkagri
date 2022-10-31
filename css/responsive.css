@@ -1,0 +1,518 @@
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav ul>li a {
+        padding: 20px 0;
+    }
+}
+
+/*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .menu-area-main {
+        height: 256px;
+        overflow-y: auto;
+    }
+
+    .megamenu>.row [class*="col-"] {
+        padding: 0px;
+    }
+
+    .menu-area-main .megamenu .men-cat {
+        padding: 0px 15px;
+    }
+
+    .menu-area-main .megamenu .women-cat {
+        padding: 0px 15px;
+    }
+
+    .menu-area-main .megamenu .el-cat {
+        padding: 0px 15px;
+    }
+
+
+    .mean-container .mean-nav ul li ol {
+        padding: 0px;
+    }
+
+    .mean-container .mean-nav ul li a {
+        padding: 10px 10px;
+        width: 94.8%;
+    }
+
+    .mean-container .mean-nav ul li a:hover {
+        color: #fff !important;
+    }
+
+    .mean-container .mean-nav ul li li a {
+        width: 92%;
+        padding: 1em 4%;
+    }
+
+    .mean-container .mean-nav ul li li li a {
+        width: 100%;
+    }
+
+    .header-search {
+        padding: 15px 0px;
+    }
+
+    #collapseFilter.d-md-block {
+        padding: 30px 0px;
+    }
+}
+
+/*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
+
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .banner-main .carousel-caption {
+        background: transparent;
+    }
+
+    .logo {
+        padding-bottom: 6px;
+        margin-top: 0px;
+    }
+
+    .text-bg h1 {
+        font-size: 66px;
+    }
+
+
+    .about .about-box::after {
+        background: inherit;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .text-bg h1 {
+        font-size: 43px;
+        line-height: 54px;
+        padding-bottom: 10px;
+    }
+
+    .text-bg span {
+        padding-bottom: 13px;
+    }
+
+    .submit {
+        padding: 17px 0px;
+        max-width: 231px;
+    }
+
+    .about .about-box::after {
+        background: inherit;
+    }
+
+    .vegetable_shop p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .logo {
+        padding-bottom: 6px;
+    }
+
+    .text-bg h1 {
+        font-size: 55px;
+        line-height: 73px
+    }
+
+    .Vegetable .Vegetable_fom {
+        width: 55%;
+    }
+
+    .Search_btn {
+        font-size: 17px;
+        max-width: 145px;
+    }
+
+    .text-bg a {
+        max-width: 147px;
+        margin-bottom: 30px;
+    }
+
+    .margin_top {
+        margin-top: 0px;
+    }
+
+    .main-menu ul>li a {
+        padding: 8px 5px;
+        font-size: 13px;
+    }
+
+    .margin_top span {
+        top: 44%;
+    }
+
+    .about .about-box::after {
+        background: inherit;
+    }
+
+    .vegetable_shop p {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .clients .titlepage h2 {
+        margin-bottom: 0;
+    }
+
+    .vegetable_shop h3 {
+        font-size: 24px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .slider_section {
+        padding: 50px 0;
+    }
+
+    .logo {
+        margin-top: 0px;
+    }
+
+    .mean-container .mean-bar {
+        margin-top: 7px;
+    }
+
+    .header {
+        background: #efefef;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .menu-area {
+        float: inherit;
+    }
+
+    .text-bg h1 {
+        padding-top: 0px;
+    }
+
+    .text-img {
+        padding-top: 30px;
+    }
+
+    .Search_btn {
+        font-size: 18px;
+        max-width: 191px;
+    }
+
+    .about .about-box::after {
+        background: inherit;
+    }
+
+    .clients .titlepage h2 {
+        margin-bottom: inherit;
+    }
+
+    .vegetable_shop p {
+        margin-bottom: 30px;
+    }
+
+    .margin_top span {
+        top: 44%;
+    }
+
+    .margin_top {
+        margin-top: 30px;
+    }
+
+    .testimonial_cont {
+        padding: 23px 30px;
+    }
+
+    .cross_inner h3 {
+        padding-left: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .testimonial_cont p {
+        padding-left: 0px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    ul.top_icon li a {
+        padding: 0px 13px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .menu-area {
+        float: inherit;
+    }
+
+    .header {
+        padding-top: 20px;
+        background: #efefef;
+    }
+
+    .mean-last {
+        display: none !important;
+    }
+
+    .logo {
+        float: inherit;
+        margin-top: 0px;
+    }
+
+    .slider_section {
+        padding: 10px 0px 40px 0px;
+    }
+
+    .text-bg span {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .text-bg h1 {
+        padding-bottom: 15px;
+        font-size: 39px;
+        line-height: 52px;
+    }
+
+    .text-bg p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .Vegetable .Vegetable_fom {
+        padding: 15px 0;
+        width: 68%;
+        font-size: 14px;
+    }
+
+    .Search_btn {
+        font-size: 13px;
+        max-width: 71px;
+    }
+
+    .text-bg a {
+        margin-right: 1px;
+        font-size: 13px;
+        max-width: 104px;
+    }
+
+    .images_box {
+        margin: 30px 0;
+    }
+
+    .about .about-box h2 {
+        font-size: 34px;
+    }
+
+    .about .about-box p {
+        padding: 20px 10px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .pr-ab-box p {
+        padding: 20px 10px;
+        font-size: 16px;
+        line-height: 25px;
+
+    }
+
+    .about .about-box::after {
+        position: inherit;
+    }
+
+    .about .about-box_img figure img {
+
+        height: 100px;
+    }
+
+    .titlepage h2 {
+        line-height: 40px;
+        font-size: 31px;
+    }
+
+    .vegetable_shop h3 {
+        font-size: 25px;
+    }
+
+    .vegetable_shop p {
+        margin-bottom: 30px;
+    }
+
+    .margin_top {
+        margin-top: 30px;
+    }
+
+    .vegetable_img span {
+        display: none;
+    }
+
+    .margin_top span {
+        display: none;
+    }
+
+    .clients_red {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 1em;
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .testomonial_section {
+        width: 90%;
+    }
+
+    .testimonial_cont {
+        width: 100%;
+        height: 80px;
+        margin-bottom: 1em;
+        padding: 10px;
+    }
+
+    .testimonial_cont .cross_inner h3 {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1px;
+    }
+
+    .testimonial_cont p {
+        padding-left: 0px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .clients .titlepage h2 {
+        margin-bottom: 0px;
+    }
+
+    ul.loca {
+        margin-bottom: 30px;
+    }
+
+    ul.Menu_footer {
+        margin-bottom: 30px;
+    }
+
+    .pr-box h2 {
+        line-height: 20px;
+        font-size: 25px;
+        padding: 10px 10px;
+        margin-bottom: 1em;
+        margin-left: 10%;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav {
+        top: 0;
+        overflow: hidden;
+        width: 99%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav a {
+        display: none;
+    }
+
+    .nav .logo a {
+        display: block;
+        margin: 0;
+        padding: 0 0 0 2.4em;
+        height: 2em;
+    }
+
+    .slider_section {
+        top: 6.8em;
+        margin-bottom: 2em;
+    }
+
+
+    .about {
+        margin-top: 10em;
+    }
+
+    .detailed-prdt {
+        width: 90%;
+        margin: 1em 0em;
+        line-height: 20px;
+    }
+
+    .prdt-img {
+        padding: 4em;
+        font-size: 16px;
+        letter-spacing: 0.2em;
+    }
+
+    .text-bg h2 {
+        margin: 0.5em 0 0 0;
+        font-size: 2em;
+        letter-spacing: 0.1em;
+    }
+
+    .text-bg h4 {
+        display: inline-block;
+        background: #428713;
+        color: #fff;
+        width: 90%;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1em;
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .text-bg li {
+        font-size: 12px;
+        line-height: 1.5em;
+        padding-left: 20px;
+        margin: 5px 0 0 30px;
+    }
+
+}
