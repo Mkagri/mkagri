@@ -79,14 +79,7 @@ function myfunc(value) {
     }
 }
 
-function navFunc() {
-    let x = document.getElementById("myTopnav");
-    if (x.className === "nav") {
-        x.classList.add("responsive");
-    } else {
-        x.classList.add("nav");
-    }
-}
+
 
 function sendMail() {
     event.preventDefault();
@@ -98,7 +91,7 @@ function sendMail() {
     };
     // generate a five digit number for the contact_number variable
     // these IDs from the previous steps
-    emailjs.send("service_q77om57", "template_8s9f24h", templateParams)
+    emailjs.send("service_f2zzuwl", "template_58dpzru", templateParams)
         .then(function () {
             alert("Message has been sent");
         }, function (error) {
