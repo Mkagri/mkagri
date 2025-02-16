@@ -111,7 +111,7 @@ function sendMail() {
   };
   // generate a five digit number for the contact_number variable
   // these IDs from the previous steps
-  emailjs.send("service_8z9kq9d", "template_ufblobn", templateParams).then(
+  emailjs.send("service_27njxms", "template_x8glbyf", templateParams).then(
     function () {
       alert("Message has been sent");
     },
